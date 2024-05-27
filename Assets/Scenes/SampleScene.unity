@@ -545,6 +545,7 @@ MonoBehaviour:
   goalPrefab: {fileID: 6089779864601585134, guid: dc0aa519e6b9781499eaaefde584a637, type: 3}
   particlePrefab: {fileID: 5670497665852859320, guid: 892cc0f4d37944f42aa6f55819f2adbb, type: 3}
   wallPrefab: {fileID: 2028676341333675640, guid: 8736b71ee54be1e49abff4b333b438aa, type: 3}
+  csvFile: {fileID: 4900000, guid: 45c9e9d43145ef4438dfd4ef75951af1, type: 3}
   clearText: {fileID: 1642038873}
 --- !u!4 &1582982329
 Transform:

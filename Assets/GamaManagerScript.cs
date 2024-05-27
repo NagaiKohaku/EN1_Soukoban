@@ -61,7 +61,7 @@ public class GamaManagerScript : MonoBehaviour
         if (!isClear)
         {
             //右矢印キーが押された場合
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
             {
                 //プレイヤーの現在の位置を取得
                 Vector2Int playerIndex = GetPlayerIndex();
@@ -81,7 +81,7 @@ public class GamaManagerScript : MonoBehaviour
             }
 
             //左矢印キーが押された場合
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             {
                 //プレイヤーの現在の位置を取得
                 Vector2Int playerIndex = GetPlayerIndex();
@@ -101,7 +101,7 @@ public class GamaManagerScript : MonoBehaviour
             }
 
             //上矢印キーが押された場合
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
             {
                 //プレイヤーの現在の位置を取得
                 Vector2Int playerIndex = GetPlayerIndex();
@@ -121,7 +121,7 @@ public class GamaManagerScript : MonoBehaviour
             }
 
             //下矢印キーが押された場合
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
             {
                 //プレイヤーの現在の位置を取得
                 Vector2Int playerIndex = GetPlayerIndex();
@@ -355,7 +355,7 @@ public class GamaManagerScript : MonoBehaviour
         {
             for(int j = 0; j < map.GetLength(1); j++)
             {
-                map[j, i] = int.Parse(csvDatas[i][j]);
+                map[i, j] = int.Parse(csvDatas[i][j]);
             }
         }
     }
