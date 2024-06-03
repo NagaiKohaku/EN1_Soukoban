@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8074741532746943687}
   - component: {fileID: 6147004724057440282}
   m_Layer: 0
-  m_Name: ParticlePrefab
+  m_Name: GoalParticlePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d9593d3286c949b4390d17f8a38eba81, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,4 +96,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2d04ca725fa504ba8a3b43b448571b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: 0.3
+  lifeTime: 1

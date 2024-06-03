@@ -6,7 +6,7 @@ public class Particle : MonoBehaviour
 {
 
     //消失するまでの時間
-    private float lifeTime;
+    public float lifeTime;
 
     //消失するまでの残り時間
     private float leftLifeTime;
@@ -19,9 +19,6 @@ public class Particle : MonoBehaviour
 
     void Start()
     {
-
-        //消失するまでの時間を0.3秒とする
-        lifeTime = 0.3f;
 
         //残り時間を初期化
         leftLifeTime = lifeTime;
